@@ -8,6 +8,8 @@ const stylesCheckoutList = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.gray,
     zIndex: 0,
+    height: "max-content",
+    maxHeight: "max-content",
   },
 });
 

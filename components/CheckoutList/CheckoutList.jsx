@@ -15,6 +15,7 @@ const CheckoutList = ({ navigation }) => {
   return (
     <FlatList
       style={styles.container}
+      scrollEnabled={false}
       ItemSeparatorComponent={() => <Separator />}
       data={[
         {

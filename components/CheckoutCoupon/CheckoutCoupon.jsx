@@ -21,12 +21,10 @@ const CheckoutCoupon = () => {
         placeholder="Укажите промокод"
         placeholderTextColor={styles.placeholder}
         value={state}
+        // onGestureEvent={handleChange}
         onChange={handleChange}
       />
-      <Button
-        title="Ввести промокод"
-        disabled={state.length > 0 ? "true" : "false"}
-      />
+      <Button title="Ввести промокод" disabled={state.length === 0} />
     </View>
   );
 };

@@ -5,15 +5,19 @@ import { ScrollView } from "react-native-gesture-handler";
 import CheckoutComment from "../CheckoutComment/CheckoutComment";
 import CheckoutCoupon from "../CheckoutCoupon/CheckoutCoupon";
 import CheckoutList from "../CheckoutList/CheckoutList";
+import CheckoutTotal from "../CheckoutTotal/CheckoutTotal";
 import styles from "./styles";
 
 const Checkout = ({ navigation }) => {
   return (
-    <ScrollView style={styles.container}>
-      <CheckoutList navigation={navigation} />
-      <CheckoutComment navigation={navigation} />
-      <CheckoutCoupon />
-    </ScrollView>
+    <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.containerScrollView}>
+        <CheckoutList navigation={navigation} />
+        <CheckoutComment navigation={navigation} />
+        <CheckoutCoupon navigation={navigation} />
+      </ScrollView>
+      <CheckoutTotal navigation={navigation} />
+    </View>
   );
 };
 
