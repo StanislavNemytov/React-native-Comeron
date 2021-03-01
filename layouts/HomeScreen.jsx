@@ -16,7 +16,7 @@ const screens = {
 };
 
 const HomeScreen = () => (
-  <Stack.Navigator initialRouteName="Home">
+  <Stack.Navigator initialRouteName="Checkout">
     <Stack.Screen
       name="Home"
       component={({ navigation }) => (
