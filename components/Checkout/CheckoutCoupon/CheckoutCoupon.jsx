@@ -9,19 +9,19 @@ const CheckoutCoupon = () => {
   /**
    * @param {Event} event
    */
-  const handleChange = (event) => {
-    setState(event.target.value);
+  const handleChange = (text) => {
+    setState(text);
   };
 
   return (
     <View style={styles.container}>
       {/* Text on focus -> TextInput */}
       <TextInput
-        style={[state.length && styles.coupon, styles.input]}
+        style={[state?.length && styles.coupon, styles.input]}
         placeholder="Укажите промокод"
         placeholderTextColor={styles.placeholder.color}
         value={state}
-        onChange={handleChange}
+        onChangeText={handleChange}
       />
       <Button title="Ввести промокод" disabled={state.length === 0} />
     </View>
