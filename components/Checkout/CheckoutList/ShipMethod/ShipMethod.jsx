@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import styles from "./styles";
 
-const point = require("../../../assets/icons/point.png");
+const point = require("../../../../assets/icons/point.png");
 
 const ShipMethod = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import styles from "./styles";
 
-const card = require("../../../assets/icons/card.png");
+const card = require("../../../../assets/icons/card.png");
 
 const Payment = () => {
   return (

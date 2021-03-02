@@ -2,8 +2,8 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import styles from "./styles";
 
-const avatar = require("../../../assets/icons/user.png");
-const attention = require("../../../assets/icons/attention.png");
+const avatar = require("../../../../assets/icons/user.png");
+const attention = require("../../../../assets/icons/attention.png");
 
 const UserData = () => {
   return (

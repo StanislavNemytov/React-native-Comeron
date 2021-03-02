@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
@@ -20,7 +19,7 @@ const TabBar = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Checkout"
+        initialRouteName="Home"
         tabBarOptions={{ showLabel: false }}
         screenOptions={({ route }) => ({
           tabBarIcon: () => {

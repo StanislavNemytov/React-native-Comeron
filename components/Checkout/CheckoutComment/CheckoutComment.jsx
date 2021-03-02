@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Button, Image, Text, View } from "react-native";
-import { colors } from "../../src/style/base";
+import { colors } from "../../../src/style/base";
 import styles from "./styles";
 
-const comment = require("../../assets/icons/comment.png");
+const comment = require("../../../assets/icons/comment.png");
 
 const CheckoutComment = () => {
   const [state, setState] = useState("Ваш комментарий к заказу...");
