@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { Button, Image, Text, View } from "react-native";
+import { Button, Image, Pressable, Text, View } from "react-native";
 import styles from "./styles";
 
 const comment = require("../../../assets/icons/comment.png");
@@ -10,14 +10,20 @@ const CheckoutComment = () => {
   const [state, setState] = useState("Ваш комментарий к заказу...");
   const [placeholder, setPlaceholder] = useState(true);
 
+  const handlerComment = () => {
+    alert("Change text");
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.containerComment}>
         <Image style={[styles.img, styles.avatar]} source={comment} />
 
-        <Text style={[styles.text, placeholder && styles.placeholder]}>
-          {state}
-        </Text>
+        <Pressable onPress={handlerComment}>
+          <Text style={[styles.text, placeholder && styles.placeholder]}>
+            {state}
+          </Text>
+        </Pressable>
       </View>
       <Button
         title="Стандартный комментарий"

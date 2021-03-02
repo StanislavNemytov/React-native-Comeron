@@ -21,7 +21,7 @@ const ToCheckout = ({ navigation }) => (
 );
 
 const HomeScreen = () => (
-  <Stack.Navigator initialRouteName="Checkout">
+  <Stack.Navigator initialRouteName="Home">
     <Stack.Screen
       name="Home"
       component={ToCheckout}

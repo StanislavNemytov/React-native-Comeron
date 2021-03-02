@@ -19,9 +19,8 @@ const CheckoutCoupon = () => {
       <TextInput
         style={[state.length && styles.coupon, styles.input]}
         placeholder="Укажите промокод"
-        placeholderTextColor={styles.placeholder}
+        placeholderTextColor={styles.placeholder.color}
         value={state}
-        // onGestureEvent={handleChange}
         onChange={handleChange}
       />
       <Button title="Ввести промокод" disabled={state.length === 0} />
