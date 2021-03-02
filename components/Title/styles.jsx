@@ -3,7 +3,7 @@ import { colors } from "../../src/style/base";
 
 const stylesTitle = StyleSheet.create({
   title_container: {
-    width: "100%",
+    flex: 1,
     alignItems: "center",
     justifyContent: "center",
   },

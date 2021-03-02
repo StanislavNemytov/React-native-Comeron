@@ -10,6 +10,9 @@ const stylesHeader = StyleSheet.create({
     alignItems: "center",
     height: 64,
   },
+  withBack: {
+    paddingRight: 42,
+  },
 });
 
 export default stylesHeader;

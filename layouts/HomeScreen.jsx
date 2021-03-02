@@ -1,8 +1,5 @@
 /* eslint-disable react/prop-types */
-import {
-  createStackNavigator,
-  HeaderBackButton,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
 import { Button } from "react-native";
 import { Checkout, HeaderScroll, Recipes } from "../components";
@@ -39,7 +36,6 @@ const HomeScreen = () => (
       const options = {
         title,
         ...styles,
-        headerTitleStyle: { alignSelf: "center" },
       };
       const isCheckout = name.toLowerCase() === "checkout";
 
