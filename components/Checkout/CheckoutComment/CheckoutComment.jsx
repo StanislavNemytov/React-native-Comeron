@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Button, Image, Text, View } from "react-native";
-import { colors } from "../../../src/style/base";
 import styles from "./styles";
 
 const comment = require("../../../assets/icons/comment.png");
@@ -16,9 +15,7 @@ const CheckoutComment = () => {
       <View style={styles.containerComment}>
         <Image style={[styles.img, styles.avatar]} source={comment} />
 
-        <Text
-          style={[styles.text, placeholder && { color: colors.placeholder }]}
-        >
+        <Text style={[styles.text, placeholder && styles.placeholder]}>
           {state}
         </Text>
       </View>

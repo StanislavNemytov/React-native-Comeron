@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
 import { Button } from "react-native";
@@ -15,13 +16,15 @@ const screens = {
   Recipes: { component: Recipes, title: "Получатель" },
 };
 
+const ToCheckout = ({ navigation }) => (
+  <Button onPress={() => onPress(navigation)} title="Click" />
+);
+
 const HomeScreen = () => (
   <Stack.Navigator initialRouteName="Checkout">
     <Stack.Screen
       name="Home"
-      component={({ navigation }) => (
-        <Button onPress={() => onPress(navigation)} title="Click" />
-      )}
+      component={ToCheckout}
       options={{
         title: "Home",
         ...styles,

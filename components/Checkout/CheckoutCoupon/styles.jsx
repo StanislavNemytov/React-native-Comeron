@@ -1,10 +1,9 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../src/style/base";
+import { colors } from "../../../src/style/base";
 
 const stylesCheckoutCoupon = StyleSheet.create({
   container: {
-    // alignItems: "center",
-    paddingTOp: 0,
+    paddingTop: 0,
     paddingBottom: 0,
     paddingRight: 20,
     paddingLeft: 20,
@@ -14,7 +13,6 @@ const stylesCheckoutCoupon = StyleSheet.create({
     textTransform: "uppercase",
   },
   input: {
-    width: "max-content",
     marginBottom: 20,
     alignSelf: "center",
   },

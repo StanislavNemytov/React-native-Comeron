@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Text } from "react-native";
 import styles from "./styles";
-import { CheckoutList } from "../components";
+import CheckoutList from "../components/Checkout/CheckoutList/CheckoutList";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,6 @@ const CheckoutScreen = () => (
       component={CheckoutList}
       options={{
         title: "Оформление заказа",
-        // ...styles,
       }}
     />
     <Stack.Screen

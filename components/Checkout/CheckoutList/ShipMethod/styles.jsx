@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../../src/style/base";
+import { colors } from "../../../../src/style/base";
 
 const stylesShipMethod = StyleSheet.create({
   container: {

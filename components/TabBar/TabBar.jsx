@@ -5,7 +5,7 @@ import { Image } from "react-native";
 import { Account, Cart, Chat, Home, Info } from "../../layouts";
 import styles from "./styles";
 
-const home = require("../../assets/icons/home@2x.png");
+const home = require("../../assets/icons/home.png");
 const account = require("../../assets/icons/account.png");
 const cart = require("../../assets/icons/cart.png");
 const info = require("../../assets/icons/info.png");

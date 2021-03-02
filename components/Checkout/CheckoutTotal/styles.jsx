@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../src/style/base";
+import { colors } from "../../../src/style/base";
 
 const stylesCheckoutTotal = StyleSheet.create({
   container: {
@@ -31,8 +31,6 @@ const stylesCheckoutTotal = StyleSheet.create({
     color: colors.white,
     textTransform: "uppercase",
     fontSize: 14,
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   },
 });
 
